@@ -1,0 +1,22 @@
+.user-list-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1.5rem;
+  background-color: aliceblue;
+  padding: 0.6rem;
+  padding-left: 1.5rem;
+  width: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 14pt;
+  margin-bottom: 0.5rem;
+  cursor: default;
+  position: relative;
+}
+
+.plus {
+  position: absolute;
+  right: 1rem;
+  color: blue;
+  cursor: pointer;
+}

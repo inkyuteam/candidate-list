@@ -1,0 +1,31 @@
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-context {
+  background-color: white;
+  width: 40rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid gray;
+  position: relative;
+  display: flex;
+  padding: 1.5rem;
+}
+
+.close {
+  color: black;
+  position: absolute;
+  right: 1.5rem;
+  cursor: pointer;
+}

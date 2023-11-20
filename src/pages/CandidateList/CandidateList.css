@@ -1,0 +1,7 @@
+.candidate-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 5rem;
+}

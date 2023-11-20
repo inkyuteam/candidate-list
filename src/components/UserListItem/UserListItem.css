@@ -1,0 +1,31 @@
+.user-list-item {
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.3rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: pre;
+  cursor: default;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.user-list-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user-list-item-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.delete {
+  color: red;
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
