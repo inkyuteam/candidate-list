@@ -45,9 +45,32 @@ export const UserList = () => {
   const modalClicked = () => {
     setModal(true);
   };
+  const addUser = (values) => {
+    if(users.filter((item) => item.email === values.email).length !== 0) {
+      alert('Email is not unique. Please try again with another email address.');
+      return;
+    }
+    setUsers([
+      ...users,
+      {
+        first: values.firstName,
+        second: values.lastName,
+        mobile: values.phoneNumber,
+        email: values.email,
+      },
+    ]);
+    setModal(false);
+  };
   return (
     <div className="user-list">
-      {modal ? <UserFormModal closeEvent={() => setModal(false)}/> : ""}
+      {modal ? (
+        <UserFormModal
+          closeEvent={() => setModal(false)}
+          addEvent={(values) => addUser(values)}
+        />
+      ) : (
+        ""
+      )}
       <div className="user-list-header">
         Candidate List
         <div className="plus" onClick={() => modalClicked()}>
